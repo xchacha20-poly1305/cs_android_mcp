@@ -16,7 +16,7 @@
 ## 功能
 
 - **代码搜索** — 支持正则表达式搜索 Android 源码
-- **文件内容** — 获取完整的源文件内容
+- **文件内容** — 默认用简短提示省略长 license，减少 token 消耗，也可按需获取完整原文
 - **符号建议** — 根据部分输入自动补全类名、方法名、文件名
 - **多项目支持** — 可搜索 Android、AndroidX、Android Studio、LLVM 等项目
 
@@ -68,10 +68,11 @@ cs-android-mcp
 | `project` | 否 | 按项目过滤：`android`、`androidx`、`android-studio`、`android-llvm` |
 | `pageSize` | 否 | 返回结果数量（默认 10，最大 50） |
 | `contextLines` | 否 | 匹配行的上下文行数（默认 1） |
+| `includeLicense` | 否 | 在搜索片段中保留完整 license（默认 `false`） |
 
 ### get_file_content
 
-获取源文件的完整内容。
+获取源文件内容，默认省略长 license。
 
 | 参数 | 必填 | 说明 |
 |---|---|---|
@@ -79,6 +80,21 @@ cs-android-mcp
 | `repository` | 是 | 仓库路径 |
 | `branch` | 是 | 分支名称 |
 | `path` | 是 | 文件路径 |
+| `includeLicense` | 否 | 返回包含 license 的完整原文（默认 `false`） |
+
+可识别的长 license 文件头（至少 400 字符）和独立的 `LICENSE` / `COPYING` 文档会替换为类似以下的提示：
+
+```text
+<ignore long Apache-2.0 license; lines 1-15>
+```
+
+短声明（包括 SPDX 标识）、普通注释和代码会保留。搜索片段保持原始行号，提示会标出被省略的原文行范围。文件大小元数据仍表示原文件大小。
+
+支持 Apache-2.0、MIT、BSD、ISC、GPL/LGPL/AGPL、MPL-2.0 和 Unlicense 的常见格式，无法可靠识别的内容保持原样。
+
+支持 `COPYING.MPL2` 等带版本号的文件名以及 `UNLICENSE`。文档按自身的许可证标题或授权声明识别，无法明确归类的许可证文档保留原文。
+
+`android://source?...` 资源读取也采用相同行为。在资源 URI 末尾追加 `&includeLicense=true` 可获取完整原文。
 
 ### suggest_symbols
 
@@ -92,6 +108,10 @@ cs-android-mcp
 ### list_projects
 
 列出所有可搜索的 Android 源码项目。
+
+## 测试
+
+`npm test` 运行离线回归测试，`npm run test:live` 连接真实 Android Code Search 后端，验证文件工具、资源读取和搜索片段的两种 license 模式。详见[样本列表和实测结果](test/live/README.md)。
 
 ## 许可证
 

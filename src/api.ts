@@ -179,7 +179,14 @@ export async function searchCode(options: SearchOptions): Promise<SearchResponse
     },
   };
 
-  return batchRequest('/v1/contents/search', body);
+  const response: SearchResponse = await batchRequest('/v1/contents/search', body);
+  // Protobuf JSON omits empty strings, including the text of blank source lines.
+  for (const result of response.searchResults ?? []) {
+    for (const snippet of result.fileSearchResult?.snippets ?? []) {
+      for (const line of snippet.snippetLines) line.lineText ??= '';
+    }
+  }
+  return response;
 }
 
 /**

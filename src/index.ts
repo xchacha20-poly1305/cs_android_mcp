@@ -21,6 +21,13 @@ import {
   type SearchResponse,
   type FileSpec,
 } from './api.js';
+import { compactLicenses, compactLicenseLines } from './license.js';
+
+const includeLicenseParameter = {
+  type: 'boolean',
+  description: 'Include full license text (default: false). Otherwise, recognized long licenses are replaced with a short notice and original line range.',
+  default: false,
+};
 
 const server = new Server(
   {
@@ -64,13 +71,14 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
               description: 'Number of context lines around matches (default: 1)',
               default: 1,
             },
+            includeLicense: includeLicenseParameter,
           },
           required: ['query'],
         },
       },
       {
         name: 'get_file_content',
-        description: 'Get the full content of a source file from Android repositories',
+        description: 'Get a source file from Android repositories. Long licenses are summarized by default; set includeLicense to true for the full original content.',
         inputSchema: {
           type: 'object',
           properties: {
@@ -91,6 +99,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
               type: 'string',
               description: 'File path within the repository',
             },
+            includeLicense: includeLicenseParameter,
           },
           required: ['project', 'repository', 'branch', 'path'],
         },
@@ -147,7 +156,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           repositoryScope,
         });
 
-        const results = formatSearchResults(response);
+        const results = formatSearchResults(response, args?.includeLicense === true);
         return {
           content: [
             {
@@ -165,12 +174,13 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         const path = args?.path as string;
 
         const response = await getFileContents(project, repository, branch, path);
+        const content = compactLicenses(response.content, path, args?.includeLicense === true);
 
         return {
           content: [
             {
               type: 'text',
-              text: `# File: ${path}\n\n\`\`\`\n${response.content}\n\`\`\`\n\nSize: ${response.size} bytes\nMIME Type: ${response.mimeType}`,
+              text: `# File: ${path}\n\n\`\`\`\n${content}\n\`\`\`\n\nOriginal size: ${response.size} bytes\nMIME Type: ${response.mimeType}`,
             },
           ],
         };
@@ -276,7 +286,7 @@ server.setRequestHandler(ListResourcesRequestSchema, async () => {
 server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
   const uri = request.params.uri;
 
-  const { project, repository, branch, path } = parseAndroidResourceUri(uri);
+  const { project, repository, branch, path, includeLicense } = parseAndroidResourceUri(uri);
 
   const response = await getFileContents(project, repository, branch, path);
 
@@ -285,7 +295,7 @@ server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
       {
         uri,
         mimeType: response.mimeType || 'text/plain',
-        text: response.content,
+        text: compactLicenses(response.content, path, includeLicense),
       },
     ],
   };
@@ -306,6 +316,7 @@ function parseAndroidResourceUri(uri: string): {
   repository: string;
   branch: string;
   path: string;
+  includeLicense: boolean;
 } {
   let url: URL;
   try {
@@ -327,10 +338,10 @@ function parseAndroidResourceUri(uri: string): {
     throw new Error(`Invalid resource URI: ${uri}`);
   }
 
-  return { project, repository, branch, path };
+  return { project, repository, branch, path, includeLicense: url.searchParams.get('includeLicense') === 'true' };
 }
 
-function formatSearchResults(response: SearchResponse): string {
+function formatSearchResults(response: SearchResponse, includeLicense = false): string {
   if (!response.searchResults || response.searchResults.length === 0) {
     return 'No results found.';
   }
@@ -352,7 +363,7 @@ function formatSearchResults(response: SearchResponse): string {
     if (fileResult.snippets && fileResult.snippets.length > 0) {
       output += '```\n';
       for (const snippet of fileResult.snippets) {
-        for (const line of snippet.snippetLines) {
+        for (const line of compactLicenseLines(snippet.snippetLines, path, includeLicense)) {
           output += `${line.lineNumber}: ${line.lineText}\n`;
         }
       }

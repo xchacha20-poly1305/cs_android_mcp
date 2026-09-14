@@ -1,0 +1,263 @@
+{
+  "files": [
+    {
+      "id": "apache-java",
+      "project": "android-studio",
+      "repository": "platform/tools/base",
+      "branch": "mirror-goog-studio-main",
+      "path": "fakeandroid/srcs/android/app/Activity.java",
+      "expectedLicense": "Apache-2.0",
+      "range": [
+        1,
+        15
+      ]
+    },
+    {
+      "id": "apache-kotlin",
+      "project": "android-studio",
+      "repository": "platform/tools/adt/idea",
+      "branch": "mirror-goog-studio-main",
+      "path": "rendering/src/com/android/tools/rendering/RenderingBundle.kt",
+      "expectedLicense": "Apache-2.0",
+      "range": [
+        1,
+        15
+      ]
+    },
+    {
+      "id": "apache-xml",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "frameworks/base/core/res/res/layout/simple_list_item_1.xml",
+      "expectedLicense": "Apache-2.0",
+      "range": [
+        2,
+        15
+      ]
+    },
+    {
+      "id": "apache-python",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "build/make/tools/check_elf_file.py",
+      "expectedLicense": "Apache-2.0",
+      "range": [
+        2,
+        15
+      ]
+    },
+    {
+      "id": "apache-shell",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "build/make/envsetup.sh",
+      "expectedLicense": "Apache-2.0",
+      "range": [
+        1,
+        13
+      ]
+    },
+    {
+      "id": "mit-document",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "external/armnn/LICENSE",
+      "expectedLicense": "MIT",
+      "range": [
+        1,
+        21
+      ]
+    },
+    {
+      "id": "bsd-c",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "bionic/libc/arch-arm/bionic/exidx_static.c",
+      "expectedLicense": "BSD",
+      "range": [
+        1,
+        27
+      ]
+    },
+    {
+      "id": "bsd-header",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "bionic/libc/include/bits/fortify/string.h",
+      "expectedLicense": "BSD",
+      "range": [
+        1,
+        27
+      ]
+    },
+    {
+      "id": "isc-document",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "external/licenseclassifier/v2/assets/License/ISC/license.txt",
+      "expectedLicense": "ISC",
+      "range": [
+        1,
+        11
+      ]
+    },
+    {
+      "id": "gpl-document",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "external/licenseclassifier/v2/assets/License/GPL-3.0/license.txt",
+      "expectedLicense": "GPL",
+      "range": [
+        1,
+        621
+      ]
+    },
+    {
+      "id": "lgpl-document",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "external/licenseclassifier/v2/assets/License/LGPL-2.1/license.txt",
+      "expectedLicense": "LGPL",
+      "range": [
+        1,
+        457
+      ]
+    },
+    {
+      "id": "agpl-document",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "external/licenseclassifier/v2/assets/License/AGPL-3.0/license.txt",
+      "expectedLicense": "AGPL",
+      "range": [
+        1,
+        619
+      ]
+    },
+    {
+      "id": "mpl-document",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "external/eigen/COPYING.MPL2",
+      "expectedLicense": "MPL-2.0",
+      "range": [
+        1,
+        373
+      ]
+    },
+    {
+      "id": "mpl-short-header",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "external/eigen/Eigen/src/Core/util/Macros.h",
+      "expectedLicense": null
+    },
+    {
+      "id": "unlicense-document",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "external/licenseclassifier/v2/assets/License/Unlicense/license.txt",
+      "expectedLicense": "Unlicense",
+      "range": [
+        1,
+        23
+      ]
+    },
+    {
+      "id": "unknown-cecill",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "external/licenseclassifier/v2/assets/License/CECILL-2.1/license.txt",
+      "expectedLicense": null
+    },
+    {
+      "id": "mixed-document",
+      "project": "android",
+      "repository": "platform/superproject",
+      "branch": "android-latest-release",
+      "path": "external/coreboot/LICENSE",
+      "expectedLicense": null
+    },
+    {
+      "id": "short-spdx",
+      "project": "android",
+      "repository": "kernel/superproject",
+      "branch": "common-android-mainline",
+      "path": "common/kernel/bounds.c",
+      "expectedLicense": null
+    },
+    {
+      "id": "mixed-lgpl-header",
+      "project": "android",
+      "repository": "kernel/superproject",
+      "branch": "common-android-mainline",
+      "path": "common/certs/extract-cert.c",
+      "expectedLicense": null
+    }
+  ],
+  "searches": [
+    {
+      "id": "search-apache",
+      "query": "file:fakeandroid/srcs/android/app/Activity.java \"Licensed under the Apache License\"",
+      "contextLines": 20,
+      "expectedLicense": "Apache-2.0"
+    },
+    {
+      "id": "search-mit-blank-lines",
+      "query": "file:external/armnn/LICENSE \"Permission is hereby granted\"",
+      "contextLines": 20,
+      "expectedLicense": "MIT"
+    },
+    {
+      "id": "search-gpl",
+      "query": "file:external/licenseclassifier/v2/assets/License/GPL-3.0/license.txt \"Version 3, 29 June 2007\"",
+      "contextLines": 20,
+      "expectedLicense": "GPL"
+    },
+    {
+      "id": "search-mpl-blank-lines",
+      "query": "file:external/eigen/COPYING.MPL2 \"Mozilla Public License\"",
+      "contextLines": 20,
+      "expectedLicense": "MPL-2.0"
+    },
+    {
+      "id": "search-unknown-cecill",
+      "query": "file:external/licenseclassifier/v2/assets/License/CECILL-2.1/license.txt \"GNU General Public License\"",
+      "contextLines": 10,
+      "expectedLicense": null
+    },
+    {
+      "id": "search-short-spdx",
+      "query": "file:common/kernel/bounds.c \"SPDX-License-Identifier\"",
+      "contextLines": 2,
+      "expectedLicense": null
+    },
+    {
+      "id": "search-code-lines",
+      "query": "file:bionic/libc/arch-arm/bionic/exidx_static.c \"__exidx_start\"",
+      "contextLines": 4,
+      "expectedLicense": null
+    },
+    {
+      "id": "search-files-without-snippets",
+      "query": "file:external/licenseclassifier/v2/assets/License/GPL-3.0/license.txt \"GNU GENERAL PUBLIC LICENSE\"",
+      "contextLines": 80,
+      "expectedLicense": "GPL",
+      "allowMissingSnippets": true
+    }
+  ]
+}

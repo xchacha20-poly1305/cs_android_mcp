@@ -1,0 +1,630 @@
+{
+  "startedAt": "2026-09-14T07:52:04.928Z",
+  "finishedAt": "2026-09-14T07:52:27.491Z",
+  "observations": [
+    {
+      "id": "apache-java",
+      "kind": "file",
+      "path": "fakeandroid/srcs/android/app/Activity.java",
+      "source": "https://cs.android.com/android-studio/platform/tools/base/+/mirror-goog-studio-main:fakeandroid/srcs/android/app/Activity.java",
+      "uri": "android://source?project=android-studio&repository=platform%2Ftools%2Fbase&branch=mirror-goog-studio-main&path=fakeandroid%2Fsrcs%2Fandroid%2Fapp%2FActivity.java",
+      "mimeType": "text/x-java",
+      "originalCharacters": 1898,
+      "displayedCharacters": 1323,
+      "originalSha256": "26c907a5bdcbdb84ad0987787e5490f38f837bed773d212e095da03f5c1cf655",
+      "notices": [
+        {
+          "license": "Apache-2.0",
+          "start": 1,
+          "end": 15
+        }
+      ],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 1608
+    },
+    {
+      "id": "apache-kotlin",
+      "kind": "file",
+      "path": "rendering/src/com/android/tools/rendering/RenderingBundle.kt",
+      "source": "https://cs.android.com/android-studio/platform/tools/adt/idea/+/mirror-goog-studio-main:rendering/src/com/android/tools/rendering/RenderingBundle.kt",
+      "uri": "android://source?project=android-studio&repository=platform%2Ftools%2Fadt%2Fidea&branch=mirror-goog-studio-main&path=rendering%2Fsrc%2Fcom%2Fandroid%2Ftools%2Frendering%2FRenderingBundle.kt",
+      "mimeType": "text/plain",
+      "originalCharacters": 1738,
+      "displayedCharacters": 1163,
+      "originalSha256": "e68de044d6596cb90c4b798614eafb8205ce5ceb816902fcb9f4090f1d54e287",
+      "notices": [
+        {
+          "license": "Apache-2.0",
+          "start": 1,
+          "end": 15
+        }
+      ],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 1067
+    },
+    {
+      "id": "apache-xml",
+      "kind": "file",
+      "path": "frameworks/base/core/res/res/layout/simple_list_item_1.xml",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:frameworks/base/core/res/res/layout/simple_list_item_1.xml",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=frameworks%2Fbase%2Fcore%2Fres%2Fres%2Flayout%2Fsimple_list_item_1.xml",
+      "mimeType": "text/plain",
+      "originalCharacters": 1177,
+      "displayedCharacters": 587,
+      "originalSha256": "8324c1daad832d6205c27d6470b2fe4445dda1d06177307d57b7e695ed66ea81",
+      "notices": [
+        {
+          "license": "Apache-2.0",
+          "start": 2,
+          "end": 15
+        }
+      ],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 3221
+    },
+    {
+      "id": "apache-python",
+      "kind": "file",
+      "path": "build/make/tools/check_elf_file.py",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:build/make/tools/check_elf_file.py",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=build%2Fmake%2Ftools%2Fcheck_elf_file.py",
+      "mimeType": "text/x-python",
+      "originalCharacters": 19711,
+      "displayedCharacters": 19154,
+      "originalSha256": "3a56973b719aa01dec2c8b5f9a690535ac8f6ae9e9cd2d7364ea72f492a26bc9",
+      "notices": [
+        {
+          "license": "Apache-2.0",
+          "start": 2,
+          "end": 15
+        }
+      ],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 1130
+    },
+    {
+      "id": "apache-shell",
+      "kind": "file",
+      "path": "build/make/envsetup.sh",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:build/make/envsetup.sh",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=build%2Fmake%2Fenvsetup.sh",
+      "mimeType": "text/plain",
+      "originalCharacters": 38355,
+      "displayedCharacters": 37800,
+      "originalSha256": "b33ca1b7b2d7fb5ec5e4d60293ae728932c6ff90855cc1b81345d7cc31ed099e",
+      "notices": [
+        {
+          "license": "Apache-2.0",
+          "start": 1,
+          "end": 13
+        }
+      ],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 716
+    },
+    {
+      "id": "mit-document",
+      "kind": "file",
+      "path": "external/armnn/LICENSE",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:external/armnn/LICENSE",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=external%2Farmnn%2FLICENSE",
+      "mimeType": "text/plain",
+      "originalCharacters": 1069,
+      "displayedCharacters": 38,
+      "originalSha256": "d1a646f4195fba044025e8d5dd0efe1182dab12f6d181e58755e06e17331c25a",
+      "notices": [
+        {
+          "license": "MIT",
+          "start": 1,
+          "end": 21
+        }
+      ],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 2325
+    },
+    {
+      "id": "bsd-c",
+      "kind": "file",
+      "path": "bionic/libc/arch-arm/bionic/exidx_static.c",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:bionic/libc/arch-arm/bionic/exidx_static.c",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=bionic%2Flibc%2Farch-arm%2Fbionic%2Fexidx_static.c",
+      "mimeType": "text/x-csrc",
+      "originalCharacters": 2153,
+      "displayedCharacters": 793,
+      "originalSha256": "72290bfc0e6c2a632c002cf4114da0709b3118024194b4e120b0a093dafe06a9",
+      "notices": [
+        {
+          "license": "BSD",
+          "start": 1,
+          "end": 27
+        }
+      ],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 696
+    },
+    {
+      "id": "bsd-header",
+      "kind": "file",
+      "path": "bionic/libc/include/bits/fortify/string.h",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:bionic/libc/include/bits/fortify/string.h",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=bionic%2Flibc%2Finclude%2Fbits%2Ffortify%2Fstring.h",
+      "mimeType": "text/x-chdr",
+      "originalCharacters": 10828,
+      "displayedCharacters": 9468,
+      "originalSha256": "81f7be3bb487cbd302aa2dc86c0594b607ab40b87c2cba5cf454c8d95cc5914b",
+      "notices": [
+        {
+          "license": "BSD",
+          "start": 1,
+          "end": 27
+        }
+      ],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 746
+    },
+    {
+      "id": "isc-document",
+      "kind": "file",
+      "path": "external/licenseclassifier/v2/assets/License/ISC/license.txt",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:external/licenseclassifier/v2/assets/License/ISC/license.txt",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=external%2Flicenseclassifier%2Fv2%2Fassets%2FLicense%2FISC%2Flicense.txt",
+      "mimeType": "text/plain",
+      "originalCharacters": 684,
+      "displayedCharacters": 39,
+      "originalSha256": "ffe7ad37497e6a7387c71582e853f4c7dbc45750b76dfa6788f731d565a33c56",
+      "notices": [
+        {
+          "license": "ISC",
+          "start": 1,
+          "end": 11
+        }
+      ],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 707
+    },
+    {
+      "id": "gpl-document",
+      "kind": "file",
+      "path": "external/licenseclassifier/v2/assets/License/GPL-3.0/license.txt",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:external/licenseclassifier/v2/assets/License/GPL-3.0/license.txt",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=external%2Flicenseclassifier%2Fv2%2Fassets%2FLicense%2FGPL-3.0%2Flicense.txt",
+      "mimeType": "text/plain",
+      "originalCharacters": 32472,
+      "displayedCharacters": 39,
+      "originalSha256": "c61f12da7cdad526bdcbed47a4c0a603e60dbbfdaf8b66933cd088e9132c303f",
+      "notices": [
+        {
+          "license": "GPL",
+          "start": 1,
+          "end": 621
+        }
+      ],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 390
+    },
+    {
+      "id": "lgpl-document",
+      "kind": "file",
+      "path": "external/licenseclassifier/v2/assets/License/LGPL-2.1/license.txt",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:external/licenseclassifier/v2/assets/License/LGPL-2.1/license.txt",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=external%2Flicenseclassifier%2Fv2%2Fassets%2FLicense%2FLGPL-2.1%2Flicense.txt",
+      "mimeType": "text/plain",
+      "originalCharacters": 24426,
+      "displayedCharacters": 40,
+      "originalSha256": "88448f95de607e8c19e376920a1521d61af6a397384dd29b2a98e2eb7a80f94e",
+      "notices": [
+        {
+          "license": "LGPL",
+          "start": 1,
+          "end": 457
+        }
+      ],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 761
+    },
+    {
+      "id": "agpl-document",
+      "kind": "file",
+      "path": "external/licenseclassifier/v2/assets/License/AGPL-3.0/license.txt",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:external/licenseclassifier/v2/assets/License/AGPL-3.0/license.txt",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=external%2Flicenseclassifier%2Fv2%2Fassets%2FLicense%2FAGPL-3.0%2Flicense.txt",
+      "mimeType": "text/plain",
+      "originalCharacters": 32386,
+      "displayedCharacters": 40,
+      "originalSha256": "fb9ce8b6dfc4f65ccb572b54cc4b7b0bc2cc1189f62fd1357ee3b044b2c77fd8",
+      "notices": [
+        {
+          "license": "AGPL",
+          "start": 1,
+          "end": 619
+        }
+      ],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 762
+    },
+    {
+      "id": "mpl-document",
+      "kind": "file",
+      "path": "external/eigen/COPYING.MPL2",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:external/eigen/COPYING.MPL2",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=external%2Feigen%2FCOPYING.MPL2",
+      "mimeType": "text/plain",
+      "originalCharacters": 16726,
+      "displayedCharacters": 43,
+      "originalSha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85",
+      "notices": [
+        {
+          "license": "MPL-2.0",
+          "start": 1,
+          "end": 373
+        }
+      ],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 677
+    },
+    {
+      "id": "mpl-short-header",
+      "kind": "file",
+      "path": "external/eigen/Eigen/src/Core/util/Macros.h",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:external/eigen/Eigen/src/Core/util/Macros.h",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=external%2Feigen%2FEigen%2Fsrc%2FCore%2Futil%2FMacros.h",
+      "mimeType": "text/x-chdr",
+      "originalCharacters": 52909,
+      "displayedCharacters": 52909,
+      "originalSha256": "8d73259b4ba482e6dbd11b31d8887fd350dfb0836700d32793446bba6ab1ae7a",
+      "notices": [],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 719
+    },
+    {
+      "id": "unlicense-document",
+      "kind": "file",
+      "path": "external/licenseclassifier/v2/assets/License/Unlicense/license.txt",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:external/licenseclassifier/v2/assets/License/Unlicense/license.txt",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=external%2Flicenseclassifier%2Fv2%2Fassets%2FLicense%2FUnlicense%2Flicense.txt",
+      "mimeType": "text/plain",
+      "originalCharacters": 1213,
+      "displayedCharacters": 45,
+      "originalSha256": "3e3d28dac21a0b75ac76baed464dccbc7a2ae69a693accb07c9e0627ce86c980",
+      "notices": [
+        {
+          "license": "Unlicense",
+          "start": 1,
+          "end": 23
+        }
+      ],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 703
+    },
+    {
+      "id": "unknown-cecill",
+      "kind": "file",
+      "path": "external/licenseclassifier/v2/assets/License/CECILL-2.1/license.txt",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:external/licenseclassifier/v2/assets/License/CECILL-2.1/license.txt",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=external%2Flicenseclassifier%2Fv2%2Fassets%2FLicense%2FCECILL-2.1%2Flicense.txt",
+      "mimeType": "text/plain",
+      "originalCharacters": 21341,
+      "displayedCharacters": 21341,
+      "originalSha256": "dc7049daf70b6ebad5a7fbbe2469b15d4c4b3432edca5fba5c7c284ae07bf906",
+      "notices": [],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 701
+    },
+    {
+      "id": "mixed-document",
+      "kind": "file",
+      "path": "external/coreboot/LICENSE",
+      "source": "https://cs.android.com/android/platform/superproject/+/android-latest-release:external/coreboot/LICENSE",
+      "uri": "android://source?project=android&repository=platform%2Fsuperproject&branch=android-latest-release&path=external%2Fcoreboot%2FLICENSE",
+      "mimeType": "text/plain",
+      "originalCharacters": 237476,
+      "displayedCharacters": 237476,
+      "originalSha256": "ea7adedec94e1f8ff605ab6ab8baf122ac9f4e302dae9bbb83e593e4375b25db",
+      "notices": [],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 925
+    },
+    {
+      "id": "short-spdx",
+      "kind": "file",
+      "path": "common/kernel/bounds.c",
+      "source": "https://cs.android.com/android/kernel/superproject/+/common-android-mainline:common/kernel/bounds.c",
+      "uri": "android://source?project=android&repository=kernel%2Fsuperproject&branch=common-android-mainline&path=common%2Fkernel%2Fbounds.c",
+      "mimeType": "text/x-csrc",
+      "originalCharacters": 974,
+      "displayedCharacters": 974,
+      "originalSha256": "284d6eb5d1660a1aa812426ab7a37aff9d80b9d20b2028460136161b1bb34540",
+      "notices": [],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 341
+    },
+    {
+      "id": "mixed-lgpl-header",
+      "kind": "file",
+      "path": "common/certs/extract-cert.c",
+      "source": "https://cs.android.com/android/kernel/superproject/+/common-android-mainline:common/certs/extract-cert.c",
+      "uri": "android://source?project=android&repository=kernel%2Fsuperproject&branch=common-android-mainline&path=common%2Fcerts%2Fextract-cert.c",
+      "mimeType": "text/x-csrc",
+      "originalCharacters": 4293,
+      "displayedCharacters": 4293,
+      "originalSha256": "ffe7dc07d558297c8db25cbc28b512a8954d38a50af09bb92d24ae75deacb1fe",
+      "notices": [],
+      "checks": [
+        "tool/resource equality",
+        "original mode equality",
+        "unchanged content outside omissions",
+        "original size and MIME type"
+      ],
+      "status": "passed",
+      "elapsedMs": 643
+    },
+    {
+      "id": "search-apache",
+      "kind": "search",
+      "query": "file:fakeandroid/srcs/android/app/Activity.java \"Licensed under the Apache License\"",
+      "hasSourceLines": true,
+      "originalCharacters": 1292,
+      "displayedCharacters": 669,
+      "notices": [
+        {
+          "license": "Apache-2.0",
+          "start": 1,
+          "end": 15
+        }
+      ],
+      "checks": [
+        "both tool modes succeed",
+        "blank lines stay blank",
+        "original search line numbers",
+        "unchanged content outside omissions"
+      ],
+      "status": "passed",
+      "elapsedMs": 324
+    },
+    {
+      "id": "search-mit-blank-lines",
+      "kind": "search",
+      "query": "file:external/armnn/LICENSE \"Permission is hereby granted\"",
+      "hasSourceLines": true,
+      "originalCharacters": 1855,
+      "displayedCharacters": 752,
+      "notices": [
+        {
+          "license": "MIT",
+          "start": 1,
+          "end": 21
+        }
+      ],
+      "checks": [
+        "both tool modes succeed",
+        "blank lines stay blank",
+        "original search line numbers",
+        "unchanged content outside omissions"
+      ],
+      "status": "passed",
+      "elapsedMs": 328
+    },
+    {
+      "id": "search-gpl",
+      "kind": "search",
+      "query": "file:external/licenseclassifier/v2/assets/License/GPL-3.0/license.txt \"Version 3, 29 June 2007\"",
+      "hasSourceLines": true,
+      "originalCharacters": 1458,
+      "displayedCharacters": 406,
+      "notices": [
+        {
+          "license": "GPL",
+          "start": 1,
+          "end": 22
+        }
+      ],
+      "checks": [
+        "both tool modes succeed",
+        "blank lines stay blank",
+        "original search line numbers",
+        "unchanged content outside omissions"
+      ],
+      "status": "passed",
+      "elapsedMs": 336
+    },
+    {
+      "id": "search-mpl-blank-lines",
+      "kind": "search",
+      "query": "file:external/eigen/COPYING.MPL2 \"Mozilla Public License\"",
+      "hasSourceLines": true,
+      "originalCharacters": 2076,
+      "displayedCharacters": 1328,
+      "notices": [
+        {
+          "license": "MPL-2.0",
+          "start": 1,
+          "end": 21
+        }
+      ],
+      "checks": [
+        "both tool modes succeed",
+        "blank lines stay blank",
+        "original search line numbers",
+        "unchanged content outside omissions"
+      ],
+      "status": "passed",
+      "elapsedMs": 331
+    },
+    {
+      "id": "search-unknown-cecill",
+      "kind": "search",
+      "query": "file:external/licenseclassifier/v2/assets/License/CECILL-2.1/license.txt \"GNU General Public License\"",
+      "hasSourceLines": true,
+      "originalCharacters": 1275,
+      "displayedCharacters": 1275,
+      "notices": [],
+      "checks": [
+        "both tool modes succeed",
+        "blank lines stay blank",
+        "original search line numbers",
+        "unchanged content outside omissions"
+      ],
+      "status": "passed",
+      "elapsedMs": 363
+    },
+    {
+      "id": "search-short-spdx",
+      "kind": "search",
+      "query": "file:common/kernel/bounds.c \"SPDX-License-Identifier\"",
+      "hasSourceLines": true,
+      "originalCharacters": 379,
+      "displayedCharacters": 379,
+      "notices": [],
+      "checks": [
+        "both tool modes succeed",
+        "blank lines stay blank",
+        "original search line numbers",
+        "unchanged content outside omissions"
+      ],
+      "status": "passed",
+      "elapsedMs": 666
+    },
+    {
+      "id": "search-code-lines",
+      "kind": "search",
+      "query": "file:bionic/libc/arch-arm/bionic/exidx_static.c \"__exidx_start\"",
+      "hasSourceLines": true,
+      "originalCharacters": 760,
+      "displayedCharacters": 760,
+      "notices": [],
+      "checks": [
+        "both tool modes succeed",
+        "blank lines stay blank",
+        "original search line numbers",
+        "unchanged content outside omissions"
+      ],
+      "status": "passed",
+      "elapsedMs": 897
+    },
+    {
+      "id": "search-files-without-snippets",
+      "kind": "search",
+      "query": "file:external/licenseclassifier/v2/assets/License/GPL-3.0/license.txt \"GNU GENERAL PUBLIC LICENSE\"",
+      "hasSourceLines": false,
+      "originalCharacters": 357,
+      "displayedCharacters": 357,
+      "notices": [],
+      "checks": [
+        "both tool modes succeed",
+        "blank lines stay blank",
+        "original search line numbers",
+        "unchanged content outside omissions"
+      ],
+      "status": "passed",
+      "elapsedMs": 355
+    }
+  ]
+}
