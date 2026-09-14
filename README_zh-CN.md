@@ -25,7 +25,7 @@
 ### Claude Code
 
 ```bash
-claude mcp add cs-android -- npx -y cs-android-mcp
+claude mcp add cs-android -- npx -y @anrong/cs-android-mcp
 ```
 
 ### Cursor
@@ -35,7 +35,7 @@ claude mcp add cs-android -- npx -y cs-android-mcp
   "mcpServers": {
     "cs-android": {
       "command": "npx",
-      "args": ["-y", "cs-android-mcp"]
+      "args": ["-y", "@anrong/cs-android-mcp"]
     }
   }
 }
@@ -46,13 +46,13 @@ claude mcp add cs-android -- npx -y cs-android-mcp
 任何兼容 MCP 协议的客户端均可通过 stdio 接入：
 
 ```bash
-npx -y cs-android-mcp
+npx -y @anrong/cs-android-mcp
 ```
 
 或全局安装后使用：
 
 ```bash
-npm install -g cs-android-mcp
+npm install -g @anrong/cs-android-mcp
 cs-android-mcp
 ```
 

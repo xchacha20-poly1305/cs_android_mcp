@@ -25,7 +25,7 @@ A Model Context Protocol (MCP) server for searching and browsing Android source 
 ### Claude Code
 
 ```bash
-claude mcp add cs-android -- npx -y cs-android-mcp
+claude mcp add cs-android -- npx -y @anrong/cs-android-mcp
 ```
 
 ### Cursor
@@ -35,7 +35,7 @@ claude mcp add cs-android -- npx -y cs-android-mcp
   "mcpServers": {
     "cs-android": {
       "command": "npx",
-      "args": ["-y", "cs-android-mcp"]
+      "args": ["-y", "@anrong/cs-android-mcp"]
     }
   }
 }
@@ -46,13 +46,13 @@ claude mcp add cs-android -- npx -y cs-android-mcp
 Any MCP-compatible client can use the stdio transport:
 
 ```bash
-npx -y cs-android-mcp
+npx -y @anrong/cs-android-mcp
 ```
 
 Or install globally:
 
 ```bash
-npm install -g cs-android-mcp
+npm install -g @anrong/cs-android-mcp
 cs-android-mcp
 ```
 
